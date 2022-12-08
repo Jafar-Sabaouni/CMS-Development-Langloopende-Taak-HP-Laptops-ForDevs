@@ -8,8 +8,7 @@ import * as styles from "../components/index.module.css"
 
 
 
-const IndexPage = () => (
-  
+const Laptops = () => (
   <Layout>
 
   </Layout>
@@ -20,6 +19,6 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="laptops" />
 
-export default IndexPage
+export default Laptops

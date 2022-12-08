@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "SA Agency",
-    description: "Artist Agency was founded in 1977 by founder, John Doe. AA continues to be at the forefront of art by establishing the careers of our talents on a holistic level -- and setting trends within the industry.",
+    title: "HP laptop for devs",
+    description: "A laptop for developers is a laptop that meets the needs of software developers. These laptops typically have powerful processors and a lot of memory, which allows them to run complex software and handle large data sets. They also often have high-resolution displays and a comfortable keyboard and touchpad, which are important for coding and working on long projects.",
     author: "@gatsbyjs",
     siteUrl: "https://gatsbystarterdefaultsource.gatsbyjs.io/",
   },

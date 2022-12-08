@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Aquire';
+  src: local('Aquire'), url(../fonts/Aquire-BW0ox.otf) format('woff');
+
+}
+body{
+  margin: 0%;
+  padding: 0%;
+  border-width: 0;
+}
+.container{
+  margin: 0%;
+  padding: 0%;
+}
+.container>nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  background-color: #848482;
+  margin: 0%;
+  padding: 0%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container>nav>ul {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.container>nav>div{
+  display: flex;
+  flex-direction: row;
+}
+.container>nav>div>p{
+
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+}
+.container>nav>div>header{
+  font-family: 'Aquire';
+  font-size: 21px;
+  letter-spacing: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.navLinkText{
+  font-family: 'Aquire';
+  color: white;
+  text-decoration: none;
+
+
+}
+.navLinkText:hover{
+  font-family: 'Aquire';
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+
+}
