@@ -22,7 +22,8 @@ const Layout = ({ children }) => {
       <nav >
         <div>
         <p>/</p>
-        <header>{data.site.siteMetadata.title}</header></div>
+        <header>{data.site.siteMetadata.title}</header>
+        </div>
         <ul >
           <li></li>
           <li >

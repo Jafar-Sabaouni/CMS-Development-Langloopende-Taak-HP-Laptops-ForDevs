@@ -8,17 +8,52 @@ import * as styles from "../components/index.module.css"
 
 
 
-const Laptops = () => (
-  <Layout>
+const Laptops =  ({data: {allWpLaptop: {edges}}}) => {
+  return (
+    <Layout pageTitle="Artists of Inghelbrecht Agency">
+      {edges.map((item) => {
+        const Laptop = item.node.laptopMeta;
+        const slug = item.node.slug;
+        return <Link to={`${slug}`}>
+          <p key={item.node.id}>{Laptop.model} {Laptop.model}</p>
+        </Link>
 
-  </Layout>
-)
+      })}
+    </Layout>
+  )
+}
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="laptops" />
+export const query = graphql`
+query{
+  allWpLaptop {
+    edges {
+      node {
+        title
+        developers {
+          nodes {
+            name
+          }
+        }
+        laptopMeta {
+          cpu
+          description
+          fieldGroupName
+          gpu
+          model
+          storagetype
+          storage
+          screensize
+          ram
+          price
+        }
+        slug
+        id
+      }
+    }
+  }
+}
+
+
+`
 
 export default Laptops

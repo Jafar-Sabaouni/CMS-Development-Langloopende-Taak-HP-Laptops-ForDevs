@@ -10,6 +10,7 @@ const NotFoundPage = () => (
   </Layout>
 )
 
+
 export const Head = () => <Seo title="404: Not Found" />
 
 export default NotFoundPage
