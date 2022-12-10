@@ -10,7 +10,7 @@ import * as styles from "../components/index.module.css"
 
 const Laptops =  ({data: {allWpLaptop: {edges}}}) => {
   return (
-    <Layout pageTitle="Artists of Inghelbrecht Agency">
+    <Layout>
       {edges.map((item) => {
         const Laptop = item.node.laptopMeta;
         const slug = item.node.slug;
