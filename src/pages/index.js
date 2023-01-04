@@ -2,33 +2,41 @@ import * as React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import LaptopsRecomendationList from "../components/LaptopsRecomendationList"
 import {
-  headerInfo,
+
   headerPicture,
-  headerTitle,
-} from "./page.module.css"
+  mainContainer,
+  headerContainer,
+} from "./home.module.css"
 // imports
 
 
 const IndexPage = ({
   data: {
-    wpPage: { homePage },
+    wpPage: { homePage }, allWpLaptop:{ edges }
   },
 }) => {
   const image = getImage(homePage.picture.localFile)
   return (
     <Layout>
-      <section>
-          <h1>{homePage.title}</h1>
-          <p>{homePage.description}</p>
-          <div style={{width: '50%', height: '50%'}}>
-          <GatsbyImage
+     <main className={mainContainer}>
+      <section className={headerContainer}>
+        <GatsbyImage 
             image={image}
             className={headerPicture}
             alt={homePage.picture.localFile}
           />
+          <div>
+          <h1>{homePage.title}</h1>
+          <p>{homePage.description}</p>
+          <LaptopsRecomendationList laptopData={edges}   LigtOrDarkMode={false}/>
           </div>
+          
+          
+          
       </section>
+      </main>
     </Layout>
   )
 }
@@ -51,6 +59,40 @@ export const query = graphql`
               }
             }
           }
+      }
+    }
+    allWpLaptop( limit: 3) {
+      edges {
+        node {
+          title
+          developers {
+            nodes {
+              name
+            }
+          }
+          laptopMeta {
+            cpu
+            description
+            fieldGroupName
+            gpu
+            model
+            storagetype
+            storage
+            screensize
+            ram
+            price
+            picture1 {
+              localFile {
+                childImageSharp {
+                  gatsbyImageData(placeholder: BLURRED)
+                }
+              }
+              altText
+            }
+          }
+          slug
+          id
+        }
       }
     }
   }
