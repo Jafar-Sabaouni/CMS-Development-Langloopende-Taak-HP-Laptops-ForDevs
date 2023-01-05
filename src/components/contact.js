@@ -17,7 +17,7 @@ const Contact = () => {
             <label>Email</label>
             <input type="email" name="email" required={true} />
             <label>Subject</label>
-            <input type="email" name="Subject" required={true} />
+            <input type="text" name="Subject" required={true} />
             <label>Message</label>
             <textarea name="message" required={true}></textarea>
             <input type="hidden" name="form-name" value="contact" />
