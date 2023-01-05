@@ -51,5 +51,6 @@ query MyQuery {
 }
 
 
+
 `
 export default AboutUs
