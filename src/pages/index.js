@@ -3,12 +3,14 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import LaptopsRecomendationList from "../components/LaptopsRecomendationList"
+import Contact from "../components/contact"
 import {
 
   headerPicture,
   mainContainer,
   headerContainer,
-} from "./home.module.css"
+  contactContainer,
+} from "./index.module.css"
 // imports
 
 
@@ -36,6 +38,7 @@ const IndexPage = ({
           
           
       </section>
+      <Contact/>
       </main>
     </Layout>
   )

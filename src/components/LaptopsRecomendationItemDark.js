@@ -9,7 +9,7 @@ import {
   , laptopLink
   , LaptopTable
   , LaptopTableDevelopersTd
-} from "../pages/home.module.css"
+} from "../pages/index.module.css"
 
 
 const LaptopsListItem = ({ item }) => {

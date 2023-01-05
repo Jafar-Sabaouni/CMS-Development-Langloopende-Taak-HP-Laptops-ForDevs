@@ -4,8 +4,8 @@
     margin-top: 60px;
   }
   .mainContainer{
-    background-color: black;
-    height: 1000px;
+    background-color: #212121;
+    height: 1550px;
   }
   .headerContainer{
     z-index: 1;
@@ -145,4 +145,60 @@
     color: #212121;
     margin: 0%;
 
+}
+.contactContainer{
+  padding-top: 1000px;;
+}
+.contactContainer>p{
+  font-family: 'Aquire';
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+}
+.contactContainer > form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #fff;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 3px;
+  width: 500px;
+}
+.contactContainer > form> label{
+  
+  font-family: 'Aquire';
+  color: black;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.contactContainer > form> input{
+  background-color: #212121;
+  color: #fff;
+  width: 350px;
+  border-radius: 3px;
+}
+.contactContainer > form> textarea{
+  background-color: #212121;
+  color: #fff;
+  width: 350px;
+  height: 200px;
+  resize: none;
+  border-radius: 3px;
+}
+.contactContainer > form> button{
+  background-color: #212121;
+  color: #fff;
+  width: 350px;
+  resize: none;
+  margin: 10px;
+  border-radius: 3px;
+}
+.contactContainer > form> button:hover{
+  background-color: #fff;
+  color: #212121;
 }

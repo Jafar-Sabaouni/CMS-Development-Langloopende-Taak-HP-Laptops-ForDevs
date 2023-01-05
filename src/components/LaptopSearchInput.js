@@ -4,7 +4,7 @@ import {
   laptopSearch
 } from "../pages/Laptops.module.css"
 
-const ForecastSearchInput = ({ onClicked }) => {
+const LaptopSearchInput = ({ onClicked }) => {
     const [search, setSearch] = useState("");
   
     return (
@@ -15,4 +15,4 @@ const ForecastSearchInput = ({ onClicked }) => {
     )
   }
 
-export default ForecastSearchInput;
+export default LaptopSearchInput;
