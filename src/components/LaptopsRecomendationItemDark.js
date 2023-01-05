@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useState, useEffect } from "react";
+
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {
@@ -17,7 +17,7 @@ const LaptopsListItem = ({ item }) => {
 
 
   const image = getImage(item.node.laptopMeta.picture1.localFile)
-  console.log(item.node.slug)
+
 
   
   return (

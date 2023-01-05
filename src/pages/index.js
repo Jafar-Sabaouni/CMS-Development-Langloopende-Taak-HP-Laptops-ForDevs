@@ -34,9 +34,6 @@ const IndexPage = ({
           <p>{homePage.description}</p>
           <LaptopsRecomendationList laptopData={edges}   LigtOrDarkMode={false}/>
           </div>
-          
-          
-          
       </section>
       <Contact/>
       </main>
