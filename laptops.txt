@@ -1,7 +1,0 @@
-Back-end developer: HP ZBook 17 G6, HP EliteBook 1050 G1, HP EliteBook x360 1030 G3
-
-Front-end developer: HP Spectre x360 13, HP EliteBook 840 G5, HP ZBook 14u G6
-
-Full-stack developer: HP ZBook 17 G6, HP EliteBook 1050 G1, HP EliteBook x360 1030 G3
-
-Mobile developer: HP Spectre x360 13, HP EliteBook 840 G5, HP Elite x2 1013 G3

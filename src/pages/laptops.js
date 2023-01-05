@@ -5,11 +5,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import LaptopSearchInput from "../components/LaptopSearchInput"
-import laptopDataSearch from "../components/laptopsDataSearch"
 import LaptopSortInput from "../components/laptopSortInput"
-import laptopDataSort from "../components/laptopDataSort"
 
-import LaptopsList from "../components/Laptoplist"
+
+import LaptopsList from "../components/Laptopslist"
 import {
   sortAndSearchContainer,
   laptopPageDescription
